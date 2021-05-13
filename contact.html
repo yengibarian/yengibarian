@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narek - Presonal Portfolio</title>
+    <!-- link logo -->
+    <link href="image/n.jpg" rel="shortcut icon" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/circle.css">
+    <link rel="stylesheet" href="css/pagination.css">
+</head>
+<body>
+    <!-- loader start -->
+    <div class="loader">
+        <img src="image/load.gif" alt="">
+    </div>
+    <!-- loader end -->
+    <!-- Start Header -->
+  <header>
+        <div class="header">
+            <div class="header-top">
+               <a href="index.html"> <h1> N</h1></a> 
+                <div class="menu-btn">
+                    <div class="burger">
+                            
+                    </div>
+                </div>
+            </div>                               
+            <div class="header-nav">
+                <nav class='nav'>
+                    <ul class='nav-ul'>
+                        <li class='nav-item'>
+                            <a href="index.html">
+                                <i class="fas fa-home"></i>
+                            </a>
+                        </li>
+                        <li class='nav-item'>
+                            <a href="about.html">
+                                <i class="far fa-user"></i>
+                            </a>
+                        </li>
+                        <li class='nav-item'>
+                            <a href="portfolio.html">
+                                <i class="far fa-image"></i>
+                            </a>
+                        </li>
+                        <li class='nav-item active'>
+                            <a href="contact.html">
+                                <i class="fas fa-envelope-open"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div> 
+        </div>
+    </header>
+    <section id='contact'> 
+        <div class="title">
+            <h2>Contact</h2>
+            <div class='alert hide'>
+               <p class='alert-text'></p>
+               <span>
+                    <i id='close-btn' class='fas fa-times'></i>
+               </span>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="info">
+                <div class='info-email'>
+                    <div class="info-icon">
+                        <i class="fas fa-envelope-square"></i>
+                    </div>
+                    <div class="info-text">
+                        <p>EMAIL</p>
+                        <p>narek.engibaryan.2000@mail.ru</p>
+                    </div>
+                </div>
+                <div class='info-phone'>
+                    <div class="info-icon">
+                        <i class="fas fa-phone-square-alt"></i>
+                    </div>
+                    <div class="info-text">
+                        <p>PHONE</p>
+                        <p>+37494126703</p>
+                    </div>
+                </div>
+                <div class='info-web'>
+                    <div class="info-web-item">
+                        <a target='blank' href="https://www.facebook.com/Narek0713/">
+                            <i class='fab fa-facebook-f'></i>
+                        </a>
+                    </div>
+    
+                    <div class="info-web-item">
+                        <a target='blank' href="https://www.instagram.com/narek_yengibaryan_/?hl=ru">
+                            <i class='fab fa-instagram'></i>
+                        </a>
+                    </div>
+
+                    <div class="info-web-item">
+                        <a href="">
+                            <i class='fab fa-telegram-plane'></i>
+                        </a>
+                    </div>
+    
+                    <div class="info-web-item">
+                        <a target='blank' href="https://github.com/Narek0713">
+                            <i class='fab fa-github'></i>
+                        </a>
+                    </div>
+    
+    
+                </div>
+            </div>
+            <div class="message">
+                <form class="message-form" action="" method='post'>
+
+                    <div class='message-item'>
+                        <input id='name' type="text" name='name' required>
+                        <div class="underline"></div>
+                        <label for="name">
+                            <span>Name</span>
+                        </label>
+                    </div>
+
+                    <div class='message-item'>
+                        <input id='email' type="text" name='email' required>
+                        <div class="underline"></div>
+                        <label for="email">
+                            <span>Email</span>
+                        </label>
+                    </div>
+
+                    <div class='message-item'>
+                        <input id='subject' type="text" name='sub' required>
+                        <div class="underline"></div>
+                        <label for="subject">
+                            <span>Subject</span>
+                        </label>
+                    </div>
+
+                    <div class='message-item' id='message-text'>
+                        <textarea required  id='text-message' name="text"></textarea>
+                        <div class="underline"></div>
+                        <label for="text-message">
+                            <span>Message</span>
+                        </label>
+                    </div>
+
+                    <div class="form-submit">
+                        <input type="submit" value='SEND'>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- jQuery -->
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <script src="js/pagination.js"></script>
+</body>
+</html>
