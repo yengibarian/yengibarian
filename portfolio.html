@@ -12,7 +12,9 @@
     <!-- Font Google -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
-    <!-- CSS -->
+<!-- slide -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">    
+<!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/portfolio.css">
@@ -69,44 +71,41 @@
         <div class="title">
             <h2>Portfolio</h2>
         </div>
-        <div class="card">
-            <div class="card-box">
-                <div class="card-item">
-                    <img src="image/codingroom.jpg" alt="">
-                    <div class="card-hover">
-                        <a target='blank' href="https://yengibarian.github.io/CodingRoom/">
-                            See Page
-                            <i class="fas fa-eye"></i>
-                        </a> 
-                    </div>
-                </div>
-                <div class="card-item">
-                    <img src="image/resume.jpg" alt="">
-                    <div class="card-hover">
-                        <a target='blank' href="https://yengibarian.github.io/">
-                            See Page
-                            <i class="fas fa-eye"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <div class="card-hover">
-                        <a href="">
-                            Not Page
-                        </a>
-                    </div>
-                </div>         
-            </div>
+        <div class="card" data-flickity='{ "wrapAround": true }'>
+            
         </div>
     </section>
 
-
     <!-- jQuery -->
     <script
-  src="https://code.jquery.com/jquery-3.6.0.js"
-  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
-  <script src="js/pagination.js"></script>
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script>
+        const portfolio = [
+            {id:1,img:'image/resume.jpg',href:'index.html'},
+            {id:2,img:'image/codingroom.jpg',href:'https://yengibarian.github.io/CodingRoom/'},
+            {id:3,img:'image/global.jpg',href:'https://yengibarian.github.io/Global/'},
+            {id:4,img:'image/will.jpg',href:'https://yengibarian.github.io/Will.github.io/'},
+            {id:5,img:'',name:''},
+        ];
+        for(let i = 0; i < portfolio.length; i++){
+            let div = `<div class="carousel-cell">
+                            <div class="carousel_img">
+                                 <img src="${portfolio[i].img}" alt="">
+                                 <div class="card-hover">
+                                    <a target='blank' href=${portfolio[i].href}>
+                                        See Page
+                                        <i class="fas fa-eye"></i>
+                                    </a> 
+                                 </div>
+                            </div>
+                        </div>`            
+            $('.card').append(div);            
+        }
+    </script>
+      <!-- sldie -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>
